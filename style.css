@@ -88,6 +88,9 @@ nav {
     margin: 1.5rem 0;
     background-color: var(--dark);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h1,
     p {
@@ -95,6 +98,27 @@ nav {
         color: #ffffff;
     }
 }
+
+.cards {
+    display: flex;
+    flex-wrap: .1rem;  
+
+    .card {
+        flex: .1rem .1rem .12rem
+        a; margin-top: auto;
+        
+    }
+
+}
+
+.feature {
+    display: flex .1.5rem;
+    align-items: center;
+
+    .words {
+        flex: 1
+    }
+}  
 
 .card {
     padding: 1rem;
@@ -116,4 +140,6 @@ footer {
     border-top: 1px solid var(--line);
     margin-top: 2rem;
     font-size: .9rem;
+    display: flex;
+    justify-context: space-between;
 }
