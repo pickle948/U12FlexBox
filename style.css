@@ -101,45 +101,48 @@ nav {
 
 .cards {
     display: flex;
-    flex-wrap: .1rem;  
-
-    .card {
-        flex: .1rem .1rem .12rem
-        a; margin-top: auto;
-        
-    }
+    flex-wrap: wrap;
+    gap: 1rem;  
 
 }
-
-.feature {
-    display: flex .1.5rem;
-    align-items: center;
-
-    .words {
-        flex: 1
-    }
-}  
 
 .card {
     padding: 1rem;
     background-color: var(--light);
     border: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 12rem;
 
     h3 {
         margin-top: 0;
     }
+
+    a {
+        margin-top: auto;
+    }
 }
 
-.feature img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.feature {
+    display: flex; 
+    gap: .1.5rem;
+    align-items: center;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .words{
+        flex: 1;
+    }
 }
 
 footer {
+    display: flex;
+    justify-context: space-between;
     border-top: 1px solid var(--line);
     margin-top: 2rem;
     font-size: .9rem;
-    display: flex;
-    justify-context: space-between;
 }
